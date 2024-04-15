@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Maxim' => 'maxim\@appsflyer.com', 'Andrii' => 'andrii.h\@appsflyer.com' }
     s.requires_arc = true
     s.platform     = :ios, :tvos, :osx
-    s.source       = { http: 'file:' + __dir__ + '/framework/binaries.zip' }
+    s.source       = { :path => 'Source/framework/binaries.zip' }
     s.resource_bundles = {'AppsFlyerFramework' => ['Source/PrivacyInfo.xcprivacy']}
 
     s.ios.deployment_target = '9.0'
