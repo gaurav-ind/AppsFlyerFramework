@@ -14,10 +14,7 @@ Pod::Spec.new do |s|
     s.author           = { 'Maxim' => 'maxim\@appsflyer.com', 'Andrii' => 'andrii.h\@appsflyer.com' }
     s.requires_arc = true
     s.platform     = :ios, :tvos, :osx
-    s.source       = {
-        http: "https://github.com/AppsFlyerSDK/AppsFlyerFramework/releases/download/6.14.0/AppsFlyerLib-Binaries.zip",
-        sha256: "893812fd02395db265b2b192a8d390aee94d9ef240720167d5fb78171c6321e0"
-    }
+    s.source       = { http: 'file:' + __dir__ + '/framework/binaries.zip' }
     s.resource_bundles = {'AppsFlyerFramework' => ['Source/PrivacyInfo.xcprivacy']}
 
     s.ios.deployment_target = '9.0'
